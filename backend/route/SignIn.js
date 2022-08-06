@@ -1,5 +1,5 @@
 import express from 'express';
-import User from '../Moduls/userModel';
+import User from '../Moduls/UserModel.js';
 const userRoute = express.Router();
 userRoute.post('/', async (req, res) => {
   const { name, email, password, isAdmin } = req.body;

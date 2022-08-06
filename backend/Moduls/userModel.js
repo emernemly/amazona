@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-const userShima = new mongoose.Schema(
+const UserShima = new mongoose.Schema(
   {
     name: { type: String, required: true },
     email: { type: String, required: true },
@@ -10,5 +10,5 @@ const userShima = new mongoose.Schema(
     timestamps: true,
   }
 );
-const User = mongoose.model('User', userShima);
+const User = mongoose.model('User', UserShima);
 export default User;

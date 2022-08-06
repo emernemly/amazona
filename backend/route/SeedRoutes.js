@@ -1,7 +1,7 @@
 import express from 'express';
 import data from '../data.js';
 import Product from '../Moduls/ProductModel.js';
-import User from '../Moduls/userModel.js';
+import User from '../Moduls/UserModel.js';
 
 const seedRouter = express.Router();
 seedRouter.get('/', async (req, res) => {
