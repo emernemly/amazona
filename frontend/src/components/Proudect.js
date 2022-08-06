@@ -14,6 +14,7 @@ const Proudect = ({ produc }) => {
   const addToCartHandler = async (item) => {
     const exisItem = cartItems.find((x) => x._id === item._id);
     const quantity = exisItem ? exisItem.quantity + 1 : 1;
+    console.log(item);
     const { data } = await axios.get(`/api/product/${item._id}`);
 
     if (data.countInStock === 0) {
